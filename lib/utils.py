@@ -1,6 +1,7 @@
 # builtin
-import os
 import itertools
+import distutils.util
+from os import environ as ENV
 # external
 import bs4
 import yaml
@@ -23,6 +24,8 @@ def setup(app):
     # public configs, from config.yaml
     with open('config.yaml','r') as config_file:
         app.config.update( yaml.load( config_file ) )
+
+    app.config['DEBUG'] = distutils.util.strtobool(ENV.get('DEBUG', False))
 
     # extensions
     flask_misaka.Misaka(app)

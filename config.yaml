@@ -7,15 +7,14 @@ AVATAR: "http://website.com/a_picture_of_something.jpg"
 AVATAR_DESC: "my picture"
 
 # name, description, and url of website
-SITENAME: "FireStarter"
-DESC: "FireStarter, a Lynn Cyrin website"
-URL: "http://lynncyrin.me"
-SOURCE: "https://github.com/lynnco/firestarter"
+SITENAME: "QAPC"
+DESC: "Queer Art and Porn Collective"
+URL: "http://qapcollective.net"
+SOURCE: "https://github.com/collectqt/qapc"
 
 # Integrations
 GOOGLE_ANALYTICS_CODE: # inside web-app/templates/analytics.html
 OPENGRAPH: True # inside web-app/templates/head.html
 
 # Settings
-DEBUG: True
 PORT: 5000
