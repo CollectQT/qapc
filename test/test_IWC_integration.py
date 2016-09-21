@@ -24,7 +24,7 @@ def test_image_from_video_url():
     table = utils.get_table()
 
     for name, video in table.items():
-        stripped_name = name.strip(',').strip(' ')
+        stripped_name = name.replace(',','').replace(' ','')
         vcr_path = 'test/vcr/test_IWC_integration/video{}.yaml'.format(stripped_name)
 
         with vcr.use_cassette('test/vcr/test_IWC_integration/video_{}.yaml'.format(stripped_name)):
