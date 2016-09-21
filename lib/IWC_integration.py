@@ -33,6 +33,7 @@ def wait_for_tag_load(browser, element):
         else:
             time.sleep(0.1)
 
+
 def login_and_get_table():
     with splinter.Browser('phantomjs') as browser:
         try:
