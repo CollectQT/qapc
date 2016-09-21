@@ -31,7 +31,7 @@ def setup(app):
     # extensions
     flask_misaka.Misaka(app)
     flask_scss.Scss(app, static_dir='static', asset_dir='static')
-    cache = Cache(app, config={'CACHE_TYPE': 'simple'})
+    cache = flask_cache.Cache(app, config={'CACHE_TYPE': 'simple'})
 
     return cache
 

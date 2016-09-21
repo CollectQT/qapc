@@ -3,7 +3,7 @@ import glob
 # external
 import flask
 # local
-from lib import utils
+from lib import utils, view_handlers
 
 
 # start app and set configuration
@@ -15,7 +15,7 @@ cache = utils.setup(app)
 @app.route('/sales')
 @cache.cached(timeout=84600)
 def sales():
-    return flask.render_template('sales.html', table=utils.populate_shoot_table())
+    return flask.render_template('sales.html', table=view_handlers.get_and_populate_shoot_table())
 
 @app.route('/')
 def index ():
