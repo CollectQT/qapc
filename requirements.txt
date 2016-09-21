@@ -38,5 +38,7 @@ simplegeneric==0.8.1
 six==1.10.0
 splinter==0.7.4
 traitlets==4.3.0
+vcrpy==1.10.2
 wcwidth==0.1.7
 Werkzeug==0.11.11
+wrapt==1.10.8

@@ -10,3 +10,4 @@ flask-cache
 splinter
 pytest
 requests
+vcrpy
