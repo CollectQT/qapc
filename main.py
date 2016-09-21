@@ -13,7 +13,7 @@ cache = utils.setup(app)
 # Views! i.e. what the user gets when they type in our url
 
 @app.route('/sales')
-@cache.cached(timeout=84600)
+@cache.cached(timeout=84600, unless=app.config['DEBUG'])
 def sales():
     return flask.render_template('sales.html', table=view_handlers.get_and_populate_shoot_table())
 
