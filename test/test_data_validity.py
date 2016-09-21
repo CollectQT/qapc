@@ -40,6 +40,12 @@ def test_get_table():
     assert bool(data)
 
 
+def test_get_images():
+    data = utils.get_images()
+    assert isinstance(data, dict)
+    assert bool(data)
+
+
 def test_get_first_video_from_table():
     video = list(utils.get_table().items())[0][1]
     assert isinstance(video, dict)
@@ -191,3 +197,12 @@ def test_view_handler():
             sum_all_earnings += earning
 
         assert round(total_earnings, 2) == round(sum_all_earnings, 2)
+
+
+def test_video_add_image():
+    video = list(utils.get_table().items())[0][1]
+    images = utils.get_images()
+
+    assert video.get('image') is None
+    video = utils.video_add_images(video, images)
+    assert video.get('image') is not None

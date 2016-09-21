@@ -93,6 +93,15 @@ def get_table():
     '''
     return load_IWC_data()
 
+def load_IWC_images():
+    path = os.path.join(base_dir, 'data/IWC_images.yaml')
+    with open(path, 'r') as image_file:
+        images = yaml.load( image_file.read() )
+    return images
+
+def get_images():
+    return load_IWC_images()
+
 ############################################################
 # table transforms
 ############################################################
@@ -150,4 +159,9 @@ def video_get_worker_earnings(video):
     for worker, percent in video['role percents'].items():
         earnings = video['total earnings'] * percent / 100
         video['earnings'][worker] = earnings
+    return video
+
+
+def video_add_images(video, images):
+    video['image'] = images[ video['name'] ]
     return video
