@@ -184,6 +184,7 @@ def test_all_videos():
 
         assert round(total_earnings, 2) == round(sum_all_earnings, 2)
 
+
 def test_view_handler():
     table = view_handlers.get_and_populate_shoot_table()
     for video in table.values():
