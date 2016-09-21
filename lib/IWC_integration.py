@@ -1,12 +1,27 @@
 # builtin
+import os
 from os import environ as ENV
 # external
-import splinter
+import bs4
 import dotenv
+import splinter
+import requests
+# local
+from lib import utils
+
+
+############################################################
+# setup
+############################################################
 
 
 dotenv.load_dotenv( dotenv.find_dotenv() )
 base_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..')
+
+
+############################################################
+# functions
+############################################################
 
 
 def wait_for_tag_load(browser, element):
@@ -37,6 +52,22 @@ def login_and_get_table():
         except Exception as e:
             browser.driver.save_screenshot('error.png')
             raise
+
+
+def image_from_video_url(url):
+    req = requests.get(url)
+    soup = bs4.BeautifulSoup(req.content, 'html.parser')
+    image = soup.find('video').get('poster')
+    return image
+
+
+def get_images_for_videos(table):
+    images = {}
+
+    for name, video in table.items():
+        images[name] = image_from_video_url(video['link'])
+
+    return images
 
 
 if __name__ == '__main__':
