@@ -4,3 +4,4 @@ venv/
 .python-version
 .env
 .cache/
+ghostdriver.log
