@@ -2,9 +2,6 @@
 import os
 import sys
 import collections
-# external
-import bs4
-import yaml
 
 
 ############################################################
