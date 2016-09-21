@@ -8,3 +8,4 @@ cryptography
 beautifulsoup4
 flask-cache
 splinter
+pytest
