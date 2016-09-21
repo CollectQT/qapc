@@ -2,6 +2,7 @@ os: linux
 language: python
 python:
   - "3.4"
-install: "pip install -r requirements.txt"
+install:
+  - "pip install -r requirements.txt"
 script: pytest
 sudo: false
