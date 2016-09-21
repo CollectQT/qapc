@@ -1,13 +1,13 @@
 # builtin
 import os
+import sys
 from os import environ as ENV
 # external
 import bs4
+import yaml
 import dotenv
 import splinter
 import requests
-# local
-from lib import utils
 
 
 ############################################################
@@ -47,7 +47,6 @@ def login_and_get_table():
             browser.visit('https://iwantclips.com/model/content_store')
             wait_for_tag_load(browser, 'tbody')
             content = browser.find_by_tag('tbody')[0].html
-            print(content)
             return content
         except Exception as e:
             browser.driver.save_screenshot('error.png')
@@ -70,8 +69,25 @@ def get_images_for_videos(table):
     return images
 
 
-if __name__ == '__main__':
+def write_data_table():
     table = login_and_get_table()
     path = os.path.join(base_dir, 'data/IWC.txt')
     with open(path, 'w') as data_file:
         data_file.write(table)
+
+
+def write_images():
+    images = {}
+    path = os.path.join(base_dir, 'data/IWC_images.yaml')
+    for name, video in utils.get_table().items():
+        images[name] = image_from_video_url(video['link'])
+    with open(path, 'w') as data_file:
+        data_file.write( str(images) )
+
+
+if __name__ == '__main__':
+    sys.path.append(base_dir)
+    from lib import utils
+
+    write_data_table()
+    write_images()
