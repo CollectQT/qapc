@@ -197,6 +197,7 @@ def test_view_handler():
             sum_all_earnings += earning
 
         assert round(total_earnings, 2) == round(sum_all_earnings, 2)
+        assert video.get('image') is not None
 
 
 def test_video_add_image():

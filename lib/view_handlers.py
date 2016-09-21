@@ -5,6 +5,7 @@ def get_and_populate_shoot_table():
 
     shoot_roles = utils.load_shoot_roles()
     role_percents = utils.load_role_percents()
+    images = utils.get_images()
     table = utils.get_table()
 
     for name, video in table.items():
@@ -14,6 +15,7 @@ def get_and_populate_shoot_table():
         video = utils.video_scale_role_percents(video)
         video = utils.video_get_total_earnings(video)
         video = utils.video_get_worker_earnings(video)
+        video = utils.video_add_images(video, images)
 
         table[name] = video
 
