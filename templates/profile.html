@@ -2,14 +2,21 @@
 {% block article %} {# tells there renderer where in the file to put this content #}
 {% filter markdown %} {# turns the following content into markdown #}
 
-{{ worker.name }}
 
-earned ${{ worker.earnings }}
+<p style="text-align: center">{{ worker.name }}</p>
 
-from:
+---
+
+Total earned: ${{ worker.earnings }}
+
+Current payout: (work in progress)
+
+---
+
+Videos:
 
 {% for video in worker.videos %}
-* [{{ video.name }}]({{ video.link }}) -- ${{ worker.earnings_map[video.name] }}
+* [{{ video.name }}]({{ video.link }}) -- total earned: ${{ worker.earnings_map[video.name] }}
 {% endfor %}
 
 {% endfilter %}
