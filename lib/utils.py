@@ -23,7 +23,7 @@ def setup(app):
     with open('config.yaml','r') as config_file:
         app.config.update( yaml.load( config_file ) )
 
-    app.config['DEBUG'] = distutils.util.strtobool(ENV.get('DEBUG', False))
+    app.config['DEBUG'] = distutils.util.strtobool(ENV.get('DEBUG', 'False'))
 
     # extensions
     flask_misaka.Misaka(app)
