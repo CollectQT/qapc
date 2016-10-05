@@ -2,7 +2,11 @@
 {% block article %} {# tells there renderer where in the file to put this content #}
 {% filter markdown %} {# turns the following content into markdown #}
 
-{{ table }}
+{% for video in table.values() %}
+
+<a href="{{ video.link }}"><img class="video-gif" src="{{ video.image }}"></a>
+
+{% endfor %}
 
 {% endfilter %}
 {% endblock article %}
