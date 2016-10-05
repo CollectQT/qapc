@@ -42,6 +42,7 @@ def test_contact():
 
 
 def test_cyrin_profile():
+    assert page_contains_content('/profile/Cyrin', '$')
     assert page_contains_content('/profile/Cyrin', 'Cyrin Song')
 
 
