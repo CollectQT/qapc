@@ -19,9 +19,9 @@ def make_worker_total_earnings(workers):
             earnings    = video['earnings'][worker]
 
             workers[worker]['earnings']            += earnings
-            workers[worker]['earnings_map'][name]   = round(earnings, 2)
+            workers[worker]['earnings_map'][name]   = earnings
 
     for worker, values in workers.items():
-        workers[worker]['earnings'] = round(values['earnings'], 2)
+        workers[worker]['earnings'] = values['earnings']
 
     return workers
