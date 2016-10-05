@@ -34,3 +34,10 @@ def test_get_user_profile_info():
 
     assert bool(worker)
     assert 0 <= worker['earnings']
+
+
+def test_get_all_workers():
+    workers = view_handlers.get_all_workers()
+
+    assert bool(workers['Cyrin'])
+    assert 0 <= workers['Cyrin']['earnings']

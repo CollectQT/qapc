@@ -22,11 +22,16 @@ def get_and_populate_shoot_table():
     return table
 
 
-def get_user_profile_info(worker):
+def get_all_workers():
 
     table = get_and_populate_shoot_table()
     workers = file_load.load_workers()
     workers = worker_utils.make_worker_video_list(workers, table)
     workers = worker_utils.make_worker_total_earnings(workers)
 
-    return workers[worker]
+    return workers
+
+
+def get_user_profile_info(worker):
+
+    return get_all_workers()[worker]
