@@ -1,7 +1,6 @@
 # builtin
 import os
 import sys
-import collections
 
 
 ############################################################
