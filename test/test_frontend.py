@@ -16,7 +16,7 @@ sys.path.append(base_dir)
 from main import app
 
 
-def content_on_page(route, content='Queer Art and Porn Collective'):
+def page_contains_content(route, content='Queer Art and Porn Collective'):
     # essentially just testing that the page builds at all
     client  = app.test_client()
     page    = client.get(route)
@@ -34,25 +34,25 @@ def test_true(): assert True
 
 
 def test_index():
-    assert content_on_page('/')
+    assert page_contains_content('/')
 
 
 def test_contact():
-    assert content_on_page('/contact', 'qapcollective@gmail.com')
+    assert page_contains_content('/contact', 'qapcollective@gmail.com')
 
 
 def test_cyrin_profile():
-    assert content_on_page('/profile/Cyrin', 'Cyrin Song')
+    assert page_contains_content('/profile/Cyrin', 'Cyrin Song')
 
 
 def test_docs():
-    assert content_on_page('/docs', 'Documents')
+    assert page_contains_content('/docs', 'Documents')
 
 
 def test_coc():
-    assert content_on_page('/docs/codeofconduct', 'Code of Conduct')
+    assert page_contains_content('/docs/codeofconduct', 'Code of Conduct')
 
 
 def test_contract():
-    assert content_on_page('/docs/contract', 'Contract')
+    assert page_contains_content('/docs/contract', 'Contract')
 
