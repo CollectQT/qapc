@@ -17,7 +17,7 @@ Ophelia:
   videos: []
   earnings: 0
   earnings_map: {}
-  paid: 0
+  paid: 40
 
 Zander:
   name: ""
@@ -31,7 +31,7 @@ Drea:
   videos: []
   earnings: 0
   earnings_map: {}
-  paid: 0
+  paid: 32
 
 Adi:
   name: ""
