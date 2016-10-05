@@ -1,0 +1,16 @@
+{% extends 'partials/base.html' %} {# tells the render what file to use #}
+{% block article %} {# tells there renderer where in the file to put this content #}
+{% filter markdown %} {# turns the following content into markdown #}
+
+{{ worker.name }}
+
+earned ${{ worker.earnings }}
+
+from:
+
+{% for video in worker.videos %}
+* {{ video.name }}
+{% endfor %}
+
+{% endfilter %}
+{% endblock article %}

@@ -3,6 +3,7 @@ QAPC:
   videos: []
 
 Cyrin:
+  name: "Cyrin Song"
   earnings: 0
   videos: []
   twitter: ''
@@ -10,6 +11,7 @@ Cyrin:
   other_links: []
 
 Ophelia:
+  name: "Ophelia Black"
   videos: []
   earnings: 0
 

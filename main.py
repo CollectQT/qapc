@@ -12,14 +12,23 @@ cache = utils.setup(app)
 
 # Views! i.e. what the user gets when they type in our url
 
+
 @app.route('/sales')
-@cache.cached(timeout=84600, unless=app.config['DEBUG'])
+# @cache.cached(timeout=84600, unless=app.config['DEBUG'])
 def sales():
     return flask.render_template('sales.html', table=view_handlers.get_and_populate_shoot_table())
+
+
+@app.route('/profile/<worker_key>')
+# @cache.cached(timeout=84600, unless=app.config['DEBUG'])
+def profile(worker_key):
+    return flask.render_template('profile.html', worker=view_handlers.get_user_profile_info(worker_key))
+
 
 @app.route('/')
 def index ():
     return flask.render_template('index.html')
+
 
 @app.route('/example')
 def example_route():
@@ -34,10 +43,12 @@ You probably shouldn't, but you can.
 Syntax is markdown, and the lack of column alignment is on purpose
     ''')
 
+
 @app.errorhandler(404)
 def page_not_found(e):
     return flask.render_template('partials/base.html',
         content='# Error 404\nPage not found'), 404
+
 
 @app.errorhandler(500)
 def server_error(e):
