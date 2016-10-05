@@ -46,7 +46,7 @@ def test_cyrin_profile():
 
 
 def test_docs():
-    assert content_on_page('/docs', 'Code of Conduct')
+    assert content_on_page('/docs', 'Documents')
 
 
 def test_coc():
