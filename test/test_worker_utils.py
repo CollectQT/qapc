@@ -30,3 +30,4 @@ def test_worker_total_earnings():
     workers = worker_utils.make_worker_total_earnings(workers, table)
 
     assert bool(workers)
+    assert 0 <= workers['Cyrin']['earnings']
