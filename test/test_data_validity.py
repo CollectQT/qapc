@@ -34,6 +34,12 @@ def test_load_role_percents():
     assert 0 <= data['QAPC'] <= 100
 
 
+def test_load_workers():
+    data = utils.load_workers()
+    assert isinstance(data, dict)
+    assert bool(data)
+
+
 def test_get_table():
     data = utils.get_table()
     assert isinstance(data, collections.OrderedDict)
