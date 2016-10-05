@@ -57,3 +57,7 @@ def test_coc():
 def test_contract():
     assert page_contains_content('/docs/contract', 'Contract')
 
+
+def test_members():
+    assert page_contains_content('/members', 'Members')
+    assert page_contains_content('/members', 'Cyrin Song')

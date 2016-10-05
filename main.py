@@ -50,6 +50,11 @@ def profile(worker_key):
     return flask.render_template('profile.html', worker=view_handlers.get_user_profile_info(worker_key))
 
 
+@app.route('/members')
+def members():
+    return flask.render_template('members.html', workers=view_handlers.get_all_workers())
+
+
 # @app.route('/sales')
 # def sales():
 #     return flask.render_template('sales.html', table=view_handlers.get_and_populate_shoot_table())
