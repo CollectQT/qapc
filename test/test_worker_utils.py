@@ -10,7 +10,7 @@ import sys
 
 base_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..')
 sys.path.append(base_dir)
-from lib import worker_utils
+from lib import file_load, worker_utils, view_handlers
 
 
 ############################################################
@@ -21,3 +21,12 @@ from lib import worker_utils
 def test_init():
     assert 1 == 1
 
+
+def test_worker_total_earnings():
+
+    workers = file_load.load_workers()
+    table = view_handlers.get_and_populate_shoot_table()
+
+    workers = worker_utils.make_worker_total_earnings(workers, table)
+
+    assert bool(workers)

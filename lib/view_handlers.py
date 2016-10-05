@@ -21,6 +21,8 @@ def get_and_populate_shoot_table():
 
     return table
 
+
 def get_user_profile_info():
 
     workers = file_load.load_workers()
+    table = get_and_populate_shoot_table()
