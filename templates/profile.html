@@ -7,9 +7,9 @@
 
 ---
 
-Total earned: ${{ worker.earnings }}
+Total earned: ${{ '{0:.2f}'.format(worker.earnings) }}
 
-Current payout: ${{ worker.earnings - worker.paid }}
+Current payout: ${{ '{0:.2f}'.format(worker.earnings - worker.paid) }}
 
 ---
 
