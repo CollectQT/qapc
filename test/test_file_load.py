@@ -19,8 +19,7 @@ from lib import file_load
 ############################################################
 
 
-def test_init():
-    assert 1 == 1
+def test_true(): assert True
 
 
 def test_load_shoot_roles():

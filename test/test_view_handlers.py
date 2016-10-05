@@ -19,17 +19,18 @@ from lib import view_handlers
 ############################################################
 
 
-def test_init():
-    assert 1 == 1
+def test_true(): assert True
 
 
-def test_view_handler():
+def test_get_and_populate_shoot_table():
     table = view_handlers.get_and_populate_shoot_table()
-    for video in table.values():
-        total_earnings = video['total earnings']
-        sum_all_earnings = 0
-        for earning in video['earnings'].values():
-            sum_all_earnings += earning
 
-        assert round(total_earnings, 2) == round(sum_all_earnings, 2)
-        assert video.get('image') is not None
+    assert bool(table)
+    assert isinstance(table, collections.OrderedDict)
+
+
+def test_get_user_profile_info():
+    worker = view_handlers.get_user_profile_info('Cyrin')
+
+    assert bool(worker)
+    assert 0 <= worker['earnings']

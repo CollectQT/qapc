@@ -1,4 +1,4 @@
-from lib import utils, file_load
+from lib import utils, file_load, worker_utils
 
 
 def get_and_populate_shoot_table():
@@ -22,9 +22,11 @@ def get_and_populate_shoot_table():
     return table
 
 
-def get_user_profile_info():
+def get_user_profile_info(worker):
 
-    workers = file_load.load_workers()
     table = get_and_populate_shoot_table()
+    workers = file_load.load_workers()
+    workers = worker_utils.make_worker_video_list(workers, table)
+    workers = worker_utils.make_worker_total_earnings(workers)
 
-    workers = worker_utils.make_worker_total_earnings(workers, table)
+    return workers[worker]

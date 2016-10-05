@@ -18,8 +18,7 @@ from lib import utils, file_load
 ############################################################
 
 
-def test_init():
-    assert 1 == 1
+def test_true(): assert True
 
 
 def test_video_add_worker_and_roles():

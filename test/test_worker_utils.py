@@ -18,8 +18,7 @@ from lib import file_load, worker_utils, view_handlers
 ############################################################
 
 
-def test_init():
-    assert 1 == 1
+def test_true(): assert True
 
 
 def test_make_worker_video_list():

@@ -20,6 +20,9 @@ from lib import utils, IWC_integration
 ############################################################
 
 
+def test_true(): assert True
+
+
 # def test_image_from_video_url():
 #     table = utils.get_table()
 
