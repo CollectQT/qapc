@@ -14,7 +14,6 @@ def make_worker_video_list(workers, table):
 
 def make_worker_total_earnings(workers):
     for worker, values in workers.items():
-        print(values)
         for video in values['videos']:
             workers[worker]['earnings'] += video['earnings'][worker]
 
