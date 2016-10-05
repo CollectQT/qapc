@@ -1,12 +1,12 @@
-from lib import utils
+from lib import utils, file_load
 
 
 def get_and_populate_shoot_table():
 
-    shoot_roles = utils.load_shoot_roles()
-    role_percents = utils.load_role_percents()
-    images = utils.get_images()
-    table = utils.get_table()
+    shoot_roles = file_load.load_shoot_roles()
+    role_percents = file_load.load_role_percents()
+    images = file_load.get_images()
+    table = file_load.get_table()
 
     for name, video in table.items():
         video = utils.video_add_worker_and_roles(video, shoot_roles)
@@ -20,3 +20,7 @@ def get_and_populate_shoot_table():
         table[name] = video
 
     return table
+
+def get_user_profile_info():
+
+    workers = file_load.load_workers()

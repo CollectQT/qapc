@@ -11,7 +11,7 @@ import collections
 
 base_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..')
 sys.path.append(base_dir)
-from lib import utils
+from lib import utils, file_load
 
 
 ############################################################
@@ -23,45 +23,10 @@ def test_init():
     assert 1 == 1
 
 
-def test_load_shoot_roles():
-    data = utils.load_shoot_roles()
-    assert isinstance(data['Ali3n Club Fuck']['Workers'], dict)
-
-
-def test_load_role_percents():
-    data = utils.load_role_percents()
-    assert 0 <= data['Performer'] <= 100
-    assert 0 <= data['QAPC'] <= 100
-
-
-def test_load_workers():
-    data = utils.load_workers()
-    assert isinstance(data, dict)
-    assert bool(data)
-
-
-def test_get_table():
-    data = utils.get_table()
-    assert isinstance(data, collections.OrderedDict)
-    assert bool(data)
-
-
-def test_get_images():
-    data = utils.get_images()
-    assert isinstance(data, dict)
-    assert bool(data)
-
-
-def test_get_first_video_from_table():
-    video = list(utils.get_table().items())[0][1]
-    assert isinstance(video, dict)
-    assert bool(video)
-
-
 def test_video_add_worker_and_roles():
-    shoot_roles = utils.load_shoot_roles()
+    shoot_roles = file_load.load_shoot_roles()
 
-    video = list(utils.get_table().items())[0][1]
+    video = list(file_load.get_table().items())[0][1]
 
     assert video.get('Workers') is None
     video = utils.video_add_worker_and_roles(video, shoot_roles)
@@ -69,10 +34,10 @@ def test_video_add_worker_and_roles():
 
 
 def test_video_add_role_unscaled_percents():
-    shoot_roles = utils.load_shoot_roles()
-    role_percents = utils.load_role_percents()
+    shoot_roles = file_load.load_shoot_roles()
+    role_percents = file_load.load_role_percents()
 
-    video = list(utils.get_table().items())[0][1]
+    video = list(file_load.get_table().items())[0][1]
     video = utils.video_add_worker_and_roles(video, shoot_roles)
 
     assert video.get('role percents unscaled') is None
@@ -81,10 +46,10 @@ def test_video_add_role_unscaled_percents():
 
 
 def test_video_create_scaling_factor():
-    shoot_roles = utils.load_shoot_roles()
-    role_percents = utils.load_role_percents()
+    shoot_roles = file_load.load_shoot_roles()
+    role_percents = file_load.load_role_percents()
 
-    video = list(utils.get_table().items())[0][1]
+    video = list(file_load.get_table().items())[0][1]
     video = utils.video_add_worker_and_roles(video, shoot_roles)
     video = utils.video_add_role_unscaled_percents(video, role_percents)
 
@@ -94,10 +59,10 @@ def test_video_create_scaling_factor():
 
 
 def test_video_scale_role_percents():
-    shoot_roles = utils.load_shoot_roles()
-    role_percents = utils.load_role_percents()
+    shoot_roles = file_load.load_shoot_roles()
+    role_percents = file_load.load_role_percents()
 
-    video = list(utils.get_table().items())[0][1]
+    video = list(file_load.get_table().items())[0][1]
     video = utils.video_add_worker_and_roles(video, shoot_roles)
     video = utils.video_add_role_unscaled_percents(video, role_percents)
     video = utils.video_create_scaling_factor(video)
@@ -108,10 +73,10 @@ def test_video_scale_role_percents():
 
 
 def test_scaling_factor_applies_properly():
-    shoot_roles = utils.load_shoot_roles()
-    role_percents = utils.load_role_percents()
+    shoot_roles = file_load.load_shoot_roles()
+    role_percents = file_load.load_role_percents()
 
-    video = list(utils.get_table().items())[0][1]
+    video = list(file_load.get_table().items())[0][1]
     video = utils.video_add_worker_and_roles(video, shoot_roles)
     video = utils.video_add_role_unscaled_percents(video, role_percents)
     video = utils.video_create_scaling_factor(video)
@@ -124,10 +89,10 @@ def test_scaling_factor_applies_properly():
 
 
 def test_video_get_total_earnings():
-    shoot_roles = utils.load_shoot_roles()
-    role_percents = utils.load_role_percents()
+    shoot_roles = file_load.load_shoot_roles()
+    role_percents = file_load.load_role_percents()
 
-    video = list(utils.get_table().items())[0][1]
+    video = list(file_load.get_table().items())[0][1]
     video = utils.video_add_worker_and_roles(video, shoot_roles)
     video = utils.video_add_role_unscaled_percents(video, role_percents)
     video = utils.video_create_scaling_factor(video)
@@ -139,10 +104,10 @@ def test_video_get_total_earnings():
 
 
 def test_video_get_worker_earnings():
-    shoot_roles = utils.load_shoot_roles()
-    role_percents = utils.load_role_percents()
+    shoot_roles = file_load.load_shoot_roles()
+    role_percents = file_load.load_role_percents()
 
-    video = list(utils.get_table().items())[0][1]
+    video = list(file_load.get_table().items())[0][1]
     video = utils.video_add_worker_and_roles(video, shoot_roles)
     video = utils.video_add_role_unscaled_percents(video, role_percents)
     video = utils.video_create_scaling_factor(video)
@@ -155,10 +120,10 @@ def test_video_get_worker_earnings():
 
 
 def test_validate_earnings():
-    shoot_roles = utils.load_shoot_roles()
-    role_percents = utils.load_role_percents()
+    shoot_roles = file_load.load_shoot_roles()
+    role_percents = file_load.load_role_percents()
 
-    video = list(utils.get_table().items())[0][1]
+    video = list(file_load.get_table().items())[0][1]
     video = utils.video_add_worker_and_roles(video, shoot_roles)
     video = utils.video_add_role_unscaled_percents(video, role_percents)
     video = utils.video_create_scaling_factor(video)
@@ -175,10 +140,10 @@ def test_validate_earnings():
 
 
 def test_all_videos():
-    shoot_roles = utils.load_shoot_roles()
-    role_percents = utils.load_role_percents()
+    shoot_roles = file_load.load_shoot_roles()
+    role_percents = file_load.load_role_percents()
 
-    for video in utils.get_table().values():
+    for video in file_load.get_table().values():
         video = utils.video_add_worker_and_roles(video, shoot_roles)
         video = utils.video_add_role_unscaled_percents(video, role_percents)
         video = utils.video_create_scaling_factor(video)
@@ -195,8 +160,8 @@ def test_all_videos():
 
 
 def test_video_add_image():
-    video = list(utils.get_table().items())[0][1]
-    images = utils.get_images()
+    video = list(file_load.get_table().items())[0][1]
+    images = file_load.get_images()
 
     assert video.get('image') is None
     video = utils.video_add_images(video, images)
