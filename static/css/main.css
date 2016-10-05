@@ -23,29 +23,32 @@ body {
             margin-top: 10px;
             margin-bottom: 10px; }
 
-            .centered {
-              margin-left: auto;
-              margin-right: auto; }
+            .top {
+              text-align: center; }
 
-              .bottom {
-                display: flex;
-                justify-content: center; }
+              .centered {
+                margin-left: auto;
+                margin-right: auto; }
 
-                article.jumbotron {
-                  position: relative;
-                  background-color: rgba(242, 240, 238, 0.9);
-                  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.35);
-                  padding-top: 18px;
-                  padding-bottom: 18px;
-                  margin-top: 30px;
-                  line-height: 1.5em; }
-                  article.jumbotron p {
-                    font-weight: normal;
-                    font-size: inherit; }
-                    @media (max-width: 768px) {
-                      article.jumbotron {
-                        margin-left: -20px;
-                        margin-right: -20px;   }
+                .bottom {
+                  display: flex;
+                  justify-content: center; }
+
+                  article.jumbotron {
+                    position: relative;
+                    background-color: rgba(242, 240, 238, 0.9);
+                    box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.35);
+                    padding-top: 18px;
+                    padding-bottom: 18px;
+                    margin-top: 30px;
+                    line-height: 1.5em; }
+                    article.jumbotron p {
+                      font-weight: normal;
+                      font-size: inherit; }
+                      @media (max-width: 768px) {
+                        article.jumbotron {
+                          margin-left: -20px;
+                          margin-right: -20px;   }
 }
 
 .avatar {
