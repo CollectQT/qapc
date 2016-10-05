@@ -16,7 +16,7 @@ Current payout: ${{ '{0:.2f}'.format(worker.earnings - worker.paid) }}
 Videos:
 
 {% for video in worker.videos %}
-* [{{ video.name }}]({{ video.link }}) -- total earned: ${{ worker.earnings_map[video.name] }}
+* [{{ video.name }}]({{ video.link }}) -- total earned: ${{ '{0:.2f}'.format(worker.earnings_map[video.name]) }}
 {% endfor %}
 
 {% endfilter %}
