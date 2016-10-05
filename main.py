@@ -27,7 +27,7 @@ def index():
 
 @app.route('/contact')
 def contact():
-    return flask.render_template('contact.html')
+    return flask.render_template('document.html', document='content/contact.md')
 
 
 @app.route('/docs')
