@@ -15,6 +15,13 @@ sys.path.append(base_dir)
 from main import app
 
 
+def content_on_page(route, content='Queer Art and Porn Collective'):
+    # essentially just testing that the page builds at all
+    client  = app.test_client()
+    page    = client.get(route)
+    return content in str(page.data)
+
+
 ############################################################
 # tests
 ############################################################
@@ -23,8 +30,14 @@ from main import app
 def test_true(): assert True
 
 
-def test_index_title():
-    client = app.test_client()
-    page = client.get('/')
+def test_index():
+    assert content_on_page('/')
 
-    assert b'Queer Art and Porn Collective' in page.data
+
+def test_contact():
+    assert content_on_page('/contact', 'Contacting Us')
+
+
+def test_cyrin_profile():
+    assert content_on_page('/profile/Cyrin', 'Cyrin Song')
+
