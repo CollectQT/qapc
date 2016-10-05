@@ -42,4 +42,4 @@ def test_make_worker_total_earnings():
 
     assert bool(workers)
     assert 0 <= workers['Cyrin']['earnings']
-
+    assert 0 <= workers['Cyrin']['earnings_map']['Ali3n Club Fuck']

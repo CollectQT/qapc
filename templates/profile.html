@@ -9,7 +9,7 @@ earned ${{ worker.earnings }}
 from:
 
 {% for video in worker.videos %}
-* [{{ video.name }}]({{ video.link }})
+* [{{ video.name }}]({{ video.link }}) -- ${{ worker.earnings_map[video.name] }}
 {% endfor %}
 
 {% endfilter %}

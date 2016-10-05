@@ -1,40 +1,62 @@
 QAPC:
-  earnings: 0
+  name: "Queer Art and Porn Collective"
   videos: []
+  earnings: 0
+  earnings_map: {}
+  paid: 0
 
 Cyrin:
   name: "Cyrin Song"
-  earnings: 0
   videos: []
-  twitter: ''
-  tumblr: ''
-  other_links: []
+  earnings: 0
+  earnings_map: {}
+  paid: 0
 
 Ophelia:
   name: "Ophelia Black"
   videos: []
   earnings: 0
+  earnings_map: {}
+  paid: 0
 
 Zander:
+  name: ""
   videos: []
   earnings: 0
+  earnings_map: {}
+  paid: 0
 
 Drea:
+  name: ""
   videos: []
   earnings: 0
+  earnings_map: {}
+  paid: 0
 
 Adi:
+  name: ""
   videos: []
   earnings: 0
+  earnings_map: {}
+  paid: 0
 
 Nic:
+  name: ""
   videos: []
   earnings: 0
+  earnings_map: {}
+  paid: 0
 
 Mel:
+  name: ""
   videos: []
   earnings: 0
+  earnings_map: {}
+  paid: 0
 
 Mischa:
+  name: ""
   videos: []
   earnings: 0
+  earnings_map: {}
+  paid: 0

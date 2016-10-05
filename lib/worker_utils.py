@@ -15,7 +15,11 @@ def make_worker_video_list(workers, table):
 def make_worker_total_earnings(workers):
     for worker, values in workers.items():
         for video in values['videos']:
-            workers[worker]['earnings'] += video['earnings'][worker]
+            name        = video['name']
+            earnings    = video['earnings'][worker]
+
+            workers[worker]['earnings']            += earnings
+            workers[worker]['earnings_map'][name]   = round(earnings, 2)
 
     for worker, values in workers.items():
         workers[worker]['earnings'] = round(values['earnings'], 2)
