@@ -30,6 +30,21 @@ def contact():
     return flask.render_template('contact.html')
 
 
+@app.route('/docs')
+def docs():
+    return flask.render_template('docs.html')
+
+
+@app.route('/docs/contract')
+def contract():
+    return flask.render_template('document.html', document='content/contract.md')
+
+
+@app.route('/docs/codeofconduct')
+def coc():
+    return flask.render_template('document.html', document='content/codeofconduct.md')
+
+
 @app.route('/profile/<worker_key>')
 def profile(worker_key):
     return flask.render_template('profile.html', worker=view_handlers.get_user_profile_info(worker_key))

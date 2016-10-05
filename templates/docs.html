@@ -1,0 +1,11 @@
+{% extends 'partials/base.html' %} {# tells the render what file to use #}
+{% block article %} {# tells there renderer where in the file to put this content #}
+{% filter markdown %} {# turns the following content into markdown #}
+
+# Documents
+
+* [Contract](/docs/contract)
+* [Code of Conduct](/docs/codeofconduct)
+
+{% endfilter %}
+{% endblock article %}

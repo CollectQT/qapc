@@ -44,3 +44,15 @@ def test_contact():
 def test_cyrin_profile():
     assert content_on_page('/profile/Cyrin', 'Cyrin Song')
 
+
+def test_docs():
+    assert content_on_page('/docs', 'Code of Conduct')
+
+
+def test_coc():
+    assert content_on_page('/docs/codeofconduct', 'Code of Conduct')
+
+
+def test_contract():
+    assert content_on_page('/docs/contract', 'Contract')
+
