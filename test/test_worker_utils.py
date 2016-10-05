@@ -22,7 +22,7 @@ def test_init():
     assert 1 == 1
 
 
-def test_worker_total_earnings():
+def test_make_worker_total_earnings():
 
     workers = file_load.load_workers()
     table = view_handlers.get_and_populate_shoot_table()
@@ -31,3 +31,14 @@ def test_worker_total_earnings():
 
     assert bool(workers)
     assert 0 <= workers['Cyrin']['earnings']
+
+
+def test_make_worker_video_list():
+
+    workers = file_load.load_workers()
+    table = view_handlers.get_and_populate_shoot_table()
+
+    workers = worker_utils.make_worker_video_list(workers, table)
+
+    assert bool(workers)
+    assert len( workers['Cyrin']['videos']) >= 1
