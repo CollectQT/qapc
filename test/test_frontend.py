@@ -1,6 +1,7 @@
 # builtin
 import os
 import sys
+import pprint
 
 
 ############################################################
@@ -19,7 +20,9 @@ def content_on_page(route, content='Queer Art and Porn Collective'):
     # essentially just testing that the page builds at all
     client  = app.test_client()
     page    = client.get(route)
-    return content in str(page.data)
+    data    = str(page.data)
+    pprint.pprint(data)
+    return content in data
 
 
 ############################################################
@@ -35,7 +38,7 @@ def test_index():
 
 
 def test_contact():
-    assert content_on_page('/contact', 'Contacting Us')
+    assert content_on_page('/contact', 'qapcollective@gmail.com')
 
 
 def test_cyrin_profile():
