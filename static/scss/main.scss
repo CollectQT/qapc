@@ -1,11 +1,5 @@
 body {
   font-size: 18px;
-
-  // slightly edited version of http://lea.verou.me/css3patterns/#tablecloth
-  background-color:white;
-  background-image: linear-gradient(90deg, rgba(172,198,207,.2) 50%, transparent 50%),
-  linear-gradient(rgba(172,198,207,.4) 50%, transparent 50%);
-  background-size:50px 50px;
 }
 
 h1, h2, h3, h4, h5 {
@@ -87,4 +81,36 @@ article.jumbotron {
   height: 48px;
   width: 48px;
   font-size: 48px;
+}
+
+////////////////////////////////////////////////////////////
+// background
+////////////////////////////////////////////////////////////
+
+// https://codepen.io/tvolodimir/pen/dlvFE
+body {
+  background-color: #DDD;
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #ffffff), color-stop(100%, #cccccc));
+  background-image: -webkit-radial-gradient(#ffffff, #cccccc);
+  background-image: -moz-radial-gradient(#ffffff, #cccccc);
+  background-image: -o-radial-gradient(#ffffff, #cccccc);
+  background-image: radial-gradient(#ffffff, #cccccc);
+  height: 100%;
+  padding-top: 1px;
+  position: relative;
+}
+body:before {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 1, color-stop(100%, rgba(0, 0, 0, 0.05)), color-stop(100%, transparent)), linear-gradient(0deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px), -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px), -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-image: -o-linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px), -o-linear-gradient(0deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(0deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 10px 10px, 10px 10px;
+  background-position: 2px 2px, 2px 2px, 1px 1px, 1px 1px;
+  bottom: 0;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
