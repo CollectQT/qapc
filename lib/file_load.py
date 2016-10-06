@@ -19,12 +19,6 @@ base_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..')
 ############################################################
 
 
-def read_file(file_name):
-    with open(file_name, 'r') as readme_file:
-        content = readme_file.read()
-    return content
-
-
 def read_html(table_str):
     soup = bs4.BeautifulSoup(table_str, 'html.parser')
     table_dict = collections.OrderedDict()
