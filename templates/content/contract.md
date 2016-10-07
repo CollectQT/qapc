@@ -8,7 +8,9 @@
 **Talent Acquisition**
 
 
-We focus on black/brown, fat, disabled, and trans/nonbinary people. No one will have to work with any person they are not comfortable with.
+We focus on black/brown, fat, disabled, and trans/nonbinary people. 
+
+No one will have to work with any person they are not comfortable with.
 
 
 
@@ -78,7 +80,7 @@ When shooting a scene refer to CoC (Code of Conduct)
 
 2. QAPC encourages workers to opt out of the PIR via bringing their own items (that is: workers should bring condoms, etc).
 
-QAPC encourages that staff do not opt of the PIR.  QAPC will reimburse staff for one time use items. (that is: the videographer should not be bringing their own collection of condoms to every shoot)
+2. QAPC encourages that staff do not opt of the PIR.  QAPC will reimburse staff for one time use items. (that is: the videographer should not be bringing their own collection of condoms to every shoot)
 
 2. If / when staff want to use something for the production, they should let the QAPC buy it from them.
 
@@ -96,9 +98,7 @@ QAPC encourages that staff do not opt of the PIR.  QAPC will reimburse staff for
 
 2. The sale of the content goes to all the workers involved with making it. This is relative to the percent that they are supposed to get from the production.
 
-2. The percentage that individual roles will receive from the shoot are shown in the Payment Scaling Document
-
-These percentages are for contractors only excluding when a staff member is a performer
+2. The percentage that individual roles will receive from the shoot are shown in the Payment Scaling Document. These percentages are for contractors only excluding when a staff member is a performer
 
 2. The people involved who are not performers are known as auxiliary staff
 
