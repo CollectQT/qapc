@@ -1,136 +1,129 @@
-Contract
+# Contract
 
-This document is a working document that is up for review and revision at any time. All parties affected will be advised of revisions before they are taken into effect.
-
-
-
-
-Talent Acquisition
-We are prioritizing trans* folks, non white/people of color, intersex, bodies that do not fit capitalist beauty standards such as fat and physically disabled/differently abled, non neurotypical, gender queer, gender fluid and other non binary bodies. We are open to cisgendered bodied performers (of course!), we are just trying to keep it as diverse and open to people traditionally non prioritized in pornography as possible.
-
-If an organizer is uncomfortable with working with a potential performer they will strive to find an organizer that will be a better match.
-
-
-
-Confirming Talent and Associates
-After a potential talent contacts us an organizer will put them on the list of potential performers to be contacted
-
-There will be a sit down exploratory meeting to be better acquainted with each other (to explain that pornography lasts a lifetime, if they are not already in porn)
-
-In this meeting the potential performer will be able to discuss in more detail about what they want their role in QAPC is and to see if they are a good fit within the collective.
-
-All accepted models are encouraged to come up with ideas for shoots that they would like to be apart of and with whom they would want to shoot with if available.
-
-Models will then be required to give staff organizers a photo of their ID, as well as get and sent STD test results 2 weeks before shooting to be put in their model folder
-
-
-
-Getting Tested
-All performers will be required to be tested for STD/STIs 2 weeks before a shoot is filmed and sent testing results to the collective to have on file in the performer’s folder.
-
-All issues of barrier use for a scene will be discussed and consented by performers before the shoot.
-
-If for any reason a performer contracts anything through a shoot the Queer Art and Porn Collective is not held liable.
-
-If for any reason a performer is not able to get tested due to financial issues, QAP Collective will be able to give a list of testing resources or fund testing if no resources are accessible.
-
-
-
-Preshoot Preparation
-Needs to be done two weeks before the filming of performances.
-
-Participation confirmation from everyone physically involved.
-
-Have a location.
-
-Know how much in reimbursement funds are needed.
-
-Know what items you will need (props, prophylactics, costumes, equipment, etc.).
-
-Have a plan for shooting.
-
-Ensure everyone knows each other, have seen pictures, knows preferences and limits.
-
-Have identification.
-
-Confirm test status.
-
-
-
-Shooting a Scene
-When shooting a scene refer to APCoC (Associate and Performer Code of Conduct on Set)
-
-We strive to encourage professionalism within the pornography industry and will hold to our Associate and Performer Code of Conduct (Known as APCoC and refer to document for further information)
-
-
-
-Payment and Assets for Production
-Everyone present at the production, excluding organizers / administrators, get an upfront payment to pay for transit, food, general living expenses related to arriving to the set. This will be referred to as the Production Living Reimbursement (PLR).
-
-Any person who would receive a PLR may opt out of receiving it via paying for their own transit, food, etc.
-
-All perishable items are also paid for upfront by the collective (condoms, gloves, dental dams, lube, makeup, any perishable food items used for production, etc). This will be referred to as the Production Item Reimbursement (PIR).
-
-It is encouraged that contractors opt out of the PIR via bringing their own items (that is: contractors should bring condoms, etc).
-
-It is encouraged that staff do not opt of the PIR, and allow the collective to reimburse them for one time use items (that is: the videographer should not be bringing their own collection of condoms to every shoot).
-
-If / when staff want to use something for the production, they should let the collective buy it from them.
-
-All upfront costs paid for by the collective are considered to be 0% interest loan that's paid back via the sale of the content with the exception of staff.
-
-An individual can act in more than one role for a single production, that is, an individual be both a performer and hair / makeup, and will get paid for both those roles.
+**This document is a working document that is up for review and revision at any time. All parties affected will be advised of revisions before they are taken into effect.**
 
 
 
 
-Sale of Content
-The people directly involved in the production will determine whether to pay back the Production Reimbursements upfront versus as a percent of sales.
+**Talent Acquisition**
 
-The sale of the content goes to all of the people involved with making it, relative to the percent that they are supposed to get from the production.
 
-The percentage that individual roles will receive from the shoot are shown in the Payment Scaling Document
+We focus on black/brown, fat, disabled, and trans/nonbinary people. No one will have to work with any person they are not comfortable with.
+
+
+
+**Confirming Talent and Associates**
+
+
+After a person contacts QAPC an organizer will put them on the list of people to contact.
+
+1. There will be a sit down meeting to get to know the performers and to explain that porn lasts a lifetime, if they are not already in porn. In this meeting the performer will be able to discuss what they want their role in QAPC to be. This also gives everyone a chance to see if the performer would be a good fit in the collective.
+
+2. QAPC encourages all performers to come up with shoot ideas that they would like to be apart of and with whom they would want work with.
+
+3. All performers are required to give organizers a photo of their ID, and send STD test results 2 weeks before shooting. This information will be put in the performers folder as required by law.
+
+
+
+**Getting Tested**
+
+
+1. Performers are required to test for STD/STIs 2 weeks before a shoot. 
+
+2. All issues of barrier use for a scene will be discussed and consented by performers before the shoot.
+
+3. If for any reason a performer contracts anything through a shoot the Queer Art and Porn Collective is not held liable.
+
+4. If a performer is not able to get tested due to financial issues, QAPC will give a list of testing resources or fund testing if no resources are available.
+
+
+
+**Preshoot Preparation**
+
+1. The deadline for preshoot preparation is 2 weeks before a shoot.
+
+1. Participation confirmation from everyone that will be on set during the shoot.
+
+2. Have a location.
+
+3. Know how much in reimbursement funds are needed.
+
+4. Know what items you will need (props, prophylactics, costumes, equipment, etc.).
+
+5. Have a plan for shooting.
+
+6. Ensure everyone knows each other, have seen pictures, knows preferences and limits.
+
+7. Have identification.
+
+8. Confirm test status.
+
+
+
+**Shooting a Scene**
+
+
+When shooting a scene refer to CoC (Code of Conduct)
+
+
+
+**Payment and Assets for Production**
+
+
+1. Everyone at a shoot location gets an upfront payment to pay for transit, food, general living expenses. This will be referred to as the Production Living Reimbursement (PLR).
+
+2. Any person who would receive a PLR may opt out of receiving it via paying for their own transit, food, etc.
+
+2. All one time use items will be purchased by QAPC. These items are condoms, gloves, dental dams, lube, makeup, any perishable food items used for production, etc. This will be referred to as the Production Item Reimbursement (PIR).
+
+2. QAPC encourages workers to opt out of the PIR via bringing their own items (that is: workers should bring condoms, etc).
+
+QAPC encourages that staff do not opt of the PIR.  QAPC will reimburse staff for one time use items. (that is: the videographer should not be bringing their own collection of condoms to every shoot)
+
+2. If / when staff want to use something for the production, they should let the QAPC buy it from them.
+
+2. All upfront costs paid for by the QAPC will be a 0% interest loan that's paid back via the sale of the content. Staff are exempt from this.
+
+2. A worker can be in more than one role for a single production. That is, an individual can be both a performer and hair / makeup, and will get paid for both those roles.
+
+
+
+
+**Sale of Content**
+
+
+2. Workers involved in the production can determine whether to pay back the PIR upfront or as a percent of sales.
+
+2. The sale of the content goes to all the workers involved with making it. This is relative to the percent that they are supposed to get from the production.
+
+2. The percentage that individual roles will receive from the shoot are shown in the Payment Scaling Document
 
 These percentages are for contractors only excluding when a staff member is a performer
 
-The people involved who are not performers are known as auxiliary staff
+2. The people involved who are not performers are known as auxiliary staff
+
+2. All workers involved in a shoot will be able to see how much each clip sold, how much they earned from each clip, and how much they have been paid out by QAPC. This will be be updated once a month at the least and will be on QAPC's website under "Members".
 
 
 
-Rights to Sell Content
-Everyone visible in the video may sell it.
-
-Nobody is allowed to sell the content prior to 6 months after its released, this will be referred to as the Release Waiting Period (RWP)
+**Rights to Sell Content**
 
 
+1. Everyone visible in the video may sell it.
 
-Standards of Service
-Videographer will commit to sending the raw footage to the editor within a week.
+2. Everyone visible in the video may sell it the moment the editor has given them the raw files.
 
-Content editors will commit to a deadline for finalizing the production editing.
+3. Everyone visible may decide to use the editors version or use raw files to edit it as they see fit. 
 
-After the Release Waiting Period is up, everyone with rights to sell the content will receive both the raw content and the final product within a week of the end of the Release Waiting Period.
-
-If at any point a hard deadline is missed, everyone with selling rights to the content will be given:
-
-A copy of all raw and currently edited footage, send to them within a week of the missed deadline.
-
-Immediate rights to sell the content via their own means, without being held to the Release Waiting Period.
-
-A staff member missing a deadline will add to their counter for triggering a recall vote.
+4. Everyone visible will get raw files to the clip within a week of the shoot date.
 
 
 
-Becoming a Staff Performer or Associate
-After the performer has filmed 3 times with QAPC there will be another sit down discussion to see if they would like to be brought on as a staff performer (or fill another staff role)
-
-If the performer agrees to become staff there will be a vote among current staff members with majority voting the model into staff.
-
-Once the model has been voted in there will be a meeting to bring them on board
-
-All staff are required to come up with at least one shoot idea per month minimum.
-Staff is paid monthly rather than through percentages of shoots they were apart
-Except for when staff members are performers on a shoot. Then they will recieve performer percentages for shoots they were apart of on top of monthly salary.
+**Standards of Service**
 
 
+1. Videographer will commit to sending the raw footage to the editor within a week.
 
+2. Content editors will commit to a deadline for finalizing the production editing.
+
+3. A staff member missing a deadline will add to their counter for triggering a recall vote.
