@@ -127,3 +127,17 @@ When shooting a scene refer to CoC (Code of Conduct)
 2. Content editors will commit to a deadline for finalizing the production editing.
 
 3. A staff member missing a deadline will add to their counter for triggering a recall vote.
+
+
+**Becoming a Staff Performer or Associate**
+
+
+1. After the performer has filmed 3 times with QAPC there will be a second sit down discussion. This discussion is to see if they would like the role as a staff performer (or fill another staff role).
+
+2. If the performer agrees to become staff current staff will vote with majority voting the model in.
+
+3. Once the model is elected in there will be a meeting to bring them on board
+
+4. Each staff member is required to come up with at least one shoot idea per month.
+
+5. Staff is paid monthly rather than through percentages of shoots they were apart of.  Except for when staff members are performers on a shoot. Then they will receive performer percentages for shoots they were apart of on top of a monthly salary.
