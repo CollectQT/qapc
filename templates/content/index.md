@@ -1,6 +1,6 @@
 # (Q)ueer (A)rt and (P)orn (C)ollective
 
-**The Queer Art and Porn Collective is about creating porn with performer control that is born from the metallic slicked glitter bombed brains of a few Portland sex workers.**
+**We shoot trade porn for sex workers**
 
 
 QAPC's goal is to work on the problems in porn that happen because of capitalism. We can not prevent all problems but we can try to create a safer space for people on set as we create fresh, hot content. QAPC hopes to help the porn industry by setting a higher standard for conduct. We are doing this through our Code of Conduct that we hold to everyone that works with us to the best of our ability.
