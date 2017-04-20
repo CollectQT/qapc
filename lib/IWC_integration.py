@@ -80,7 +80,7 @@ def write_data_table():
 def write_images():
     images = {}
     path = os.path.join(base_dir, 'data/IWC_images.yaml')
-    for name, video in utils.get_table().items():
+    for name, video in view_handlers.get_and_populate_shoot_table().items():
         images[name] = image_from_video_url(video['link'])
     with open(path, 'w') as data_file:
         data_file.write( str(images) )
@@ -88,7 +88,7 @@ def write_images():
 
 if __name__ == '__main__':
     sys.path.append(base_dir)
-    from lib import utils
+    from lib import view_handlers
 
     write_data_table()
     write_images()
