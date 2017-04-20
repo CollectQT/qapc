@@ -12,7 +12,7 @@ import vcr
 
 base_dir = os.path.join(os.path.abspath(os.path.dirname(__file__)), '..')
 sys.path.append(base_dir)
-from lib import IWC_integration, view_handlers
+from lib import IWC_integration, file_load
 
 
 ############################################################
@@ -21,7 +21,7 @@ from lib import IWC_integration, view_handlers
 
 
 def test_image_from_video_url():
-    table = view_handlers.get_and_populate_shoot_table()
+    table = file_load.get_table()
 
     for name, video in table.items():
         stripped_name = name.replace(',','').replace(' ','')
